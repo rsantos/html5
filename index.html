@@ -11,17 +11,8 @@
         <script>
             document.createElement("myTag");
         </script>
-        <style>
-            header, section, footer, nav, main, article, figure {
-                display: block;
-            }
-            myTag {
-                display: block;
-                background-color: #ddd;
-                padding: 50px;
-                font-size: 30px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif]-->
@@ -38,6 +29,22 @@
                 </ul>
             </nav>
         </header>
+
+        <section>
+            <article>
+                <header>
+                    <h1>Title of a content</h1>
+                    <p>description of content</p>
+                </header>
+                ... content ...
+                <footer>
+                    <small>
+                        <a href="news.html">View more...</a>
+                    </small>
+                </footer>
+            </article>
+        </section>
+
         Content of document ...
         <myTag>That's my tag</myTag>
     </body>
