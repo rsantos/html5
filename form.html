@@ -102,5 +102,39 @@
                 <button>Submit</button>
             </form>
         </section>
+        <section>
+            <h1>The novalidate attribute and autofocus</h1>
+            <form novalidate>
+                <div class="form-group">
+                    <input type="text" name="fname" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lname" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" novalidate>
+                </div>
+                <button>Submit</button>
+            </form>
+        </section>
+        <section>
+            <h1>The form attribute</h1>
+            <form id="form1">
+                <div class="form-group">
+                    <input type="text" name="fname" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lname" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <button>Submit</button>
+                <button formnovalidate>Submit novalidate</button>
+                <button formnovalidate formmethod="post">Submit method</button>
+                <button formnovalidate formaction="post.php">Submit action</button>
+            </form>
+            <input type="text" name="color" form="form1">
+        </section>
     </body>
 </html>
